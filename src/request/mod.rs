@@ -1,5 +1,5 @@
 use std::io::{Read, Result, Write};
-// Establish connection with wikitionary. Takes url as input, returns stream struct
+// Establish connection with wiktionary. Takes url as input, returns stream struct
 fn est() -> Result<std::net::TcpStream> {
     std::net::TcpStream::connect("208.80.154.224:80")
 }
