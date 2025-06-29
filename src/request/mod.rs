@@ -1,6 +1,6 @@
 use ureq;
 // NO UREQ IMPLEMENTATION (MAYBE WILL GET IT WORKING LATER)
-// Establish connection with wikitionary. Takes url as input, returns stream struct
+// Establish connection with wiktionary. Takes url as input, returns stream struct
 // fn est() -> Result<std::net::TcpStream, Box<dyn std::error::Error>> {
 //     Ok(std::net::TcpStream::connect("208.80.154.224:80")?)
 // }
