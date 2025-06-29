@@ -1,5 +1,7 @@
 mod help;
 mod request;
+
+// TODO: Add json parsing
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = std::env::args().collect();
 
