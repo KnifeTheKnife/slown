@@ -25,9 +25,5 @@ pub fn req(query: &str) -> Result<String> {
 
     stream.read_to_string(&mut response)?;
 
-    if let Some(body_start) = response.find("\r\n\r\n") {
-        Ok(response[body_start + 4..].to_string())
-    } else {
-        Ok(response)
-    }
+    Ok(response)
 }
