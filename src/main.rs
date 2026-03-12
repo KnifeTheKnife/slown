@@ -13,8 +13,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         help::print_help();
         return Err("Err".into());
     }
-    match request::req(&args[1]) {
-        Ok(response) => std::println!("Success! Result: {}", response),
+    match request::req(&args[1], "en") {
+        Ok(response) => {
+            let json = String::from_utf8_lossy(&response);
+            std::println!("Success! Result: {}", json);
+        }
         Err(e) => std::println!("Error: {}", e),
     }
     Ok(())
