@@ -3,3 +3,4 @@ target
 **/*.rs.bk
 **/mutants.out*/
 *.txt
+result
